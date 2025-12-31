@@ -225,7 +225,7 @@ Netlify
 
 Vercel
 
-👨‍💻 Auteur
+👨‍💻 Baptiste Diedler
 
 Projet réalisé à des fins pédagogiques.
 Libre à modifier, améliorer et redistribuer.

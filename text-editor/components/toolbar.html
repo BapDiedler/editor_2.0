@@ -1,0 +1,59 @@
+<!-- Barre d'outils -->
+<div id="toolbar">
+
+    <!-- Exportation -->
+    <button type="button" onclick="exportPDF()" title="Exporter PDF">
+        📄 PDF
+    </button>
+    <button type="button" onclick="exportDOCX()" title="Exporter DOCX">
+    📄 DOCX
+    </button>
+
+
+
+    <!-- Mise en forme -->
+    <button type="button" onclick="formatText('bold')" title="Gras">
+        <strong>B</strong>
+    </button>
+
+    <button type="button" onclick="formatText('italic')" title="Italique">
+        <em>I</em>
+    </button>
+
+    <button type="button" onclick="formatText('underline')" title="Souligné">
+        <u>U</u>
+    </button>
+
+    <!-- Couleur du texte -->
+    <input type="color" id="text-color-picker" title="Changer la couleur du texte">
+
+
+    <!-- Séparateur -->
+    <span class="separator"></span>
+
+    <!-- Alignement -->
+    <button type="button" onclick="formatText('justifyLeft')" title="Aligner à gauche">
+        ⬅
+    </button>
+
+    <button type="button" onclick="formatText('justifyCenter')" title="Centrer">
+        ⬍
+    </button>
+
+    <button type="button" onclick="formatText('justifyRight')" title="Aligner à droite">
+        ➡
+    </button>
+
+    <!-- Séparateur -->
+    <span class="separator"></span>
+
+    <!-- Listes -->
+    <button type="button" onclick="formatText('insertUnorderedList')" title="Liste à puces">
+        • Liste
+    </button>
+
+    <button type="button" onclick="formatText('insertOrderedList')" title="Liste numérotée">
+        1. Liste
+    </button>
+
+</div>

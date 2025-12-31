@@ -1,9 +1,116 @@
-#editor {
-    min-height: 400px;
+/* =========================
+   RESET & BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f2f5;
     padding: 20px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    color: #333;
+}
+
+/* =========================
+   APP CONTAINER
+========================= */
+
+#app {
+    max-width: 900px;
+    margin: auto;
     background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+#toolbar button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#toolbar button:hover {
+    background-color: #eaeaea;
+}
+
+#toolbar button:active {
+    background-color: #dcdcdc;
+}
+
+/* Séparateur */
+.separator {
+    width: 1px;
+    height: 24px;
+    background-color: #ccc;
+    margin: 0 8px;
+}
+
+/* =========================
+   EDITOR
+========================= */
+
+#editor {
+    min-height: 450px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Calibri", Arial, sans-serif;
+    color: #000000;
+}
+
+
+/* Placeholder visuel */
+#editor p:first-child {
+    color: #999;
+}
+
+/* Texte sélectionné */
+#editor ::selection {
+    background-color: #cce4ff;
+}
+
+#text-color-picker {
+    width: 36px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 6px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    #app {
+        margin: 0;
+    }
+
+    #toolbar {
+        flex-wrap: wrap;
+    }
 }
