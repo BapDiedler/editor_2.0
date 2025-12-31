@@ -24,6 +24,7 @@ function initApp() {
         if (typeof initColorPicker === "function") {
             initColorPicker();
         }
+        initImageInsert();
     });
 
     // Charger l'éditeur
