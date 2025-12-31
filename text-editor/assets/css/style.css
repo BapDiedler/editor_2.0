@@ -1,0 +1,9 @@
+#editor {
+    min-height: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
